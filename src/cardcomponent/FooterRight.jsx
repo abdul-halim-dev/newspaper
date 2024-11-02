@@ -3,12 +3,12 @@ import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from "reac
 import { Link } from "react-router-dom"
 const FooterRight = () => {
   return (
-    <div className="w-[50%] flex items-center justify-center flex-col gap-2 ">
-      <div className="w-full items-end justify-end gap-2 flex">
+    <div className=" w-full sm:w-[50%] flex items-center justify-center flex-col gap-2 ">
+      <div className="w-full  items-end justify-end gap-2 flex">
       <p> মোবাইল এপ ডাউনলোড করুন </p>
       </div>
        
-          <div className="w-full items-end justify-end gap-2 flex">
+          <div className="w-full  items-end justify-end gap-2 flex">
           <Link className=" w-[150px] h-full ">  <img className="w-full h-full object-contain" src="https://i.ibb.co.com/7zhGpr1/googelget.jpg " alt="" /></Link>
            <Link className=" w-[150px] h-full ">  <img className="w-full h-full object-contain" src="https://i.ibb.co.com/jWDqNK1/apple.jpg " alt="" /></Link>
         
