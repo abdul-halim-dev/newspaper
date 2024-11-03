@@ -28,10 +28,10 @@ const Header = () => {
 
   return (
     
-    <header className=" w-full flex flex-col items-start justify-between   " >
+    <header className=" w-full flex flex-col items-start justify-between  sticky top-0 z-50  " >
         
     <div className=" flex items-center w-full justify-between bg-[#c5161d] md:py-0 py-2 gap-2 md:h-[50px] px-4 md:px-16 flex-col md:flex-row ">
-<p className="text-white   text-lg font-normal ">
+<p className="text-secondary  text-lg   ">
 রবিবার ২৯ সেপ্টেম্বর ২০২৪ , ১২.৪০ পূর্বাহ্ন 
 </p>
 <div  className="  flex item-center justify-center gap-2">
@@ -40,9 +40,9 @@ const Header = () => {
         searchShow ? <input className=" w-[150px] sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> : ""
       }
        
-        <i onClick={searchHandle} className="border-r-2 px-2 text-white text-lg cursor-pointer " ><FaSearch/> </i>
+        <i onClick={searchHandle} className="border-r-2 px-2 text-secondary text-lg cursor-pointer " ><FaSearch/> </i>
     </div>
-  <div  className=" w-full flex items-center justify-center gap-1   text-white ">
+  <div  className=" w-full flex items-center justify-center gap-1   text-secondary ">
   <a href="#" className="border-r-2 px-2 text-lg"> <FaFacebook/> </a>
     <a href="#" className="border-r-2 px-2 text-lg "><FaTwitter/> </a>
     <a href="#" className="border-r-2 px-2 text-lg "> <FaLinkedin/> </a>
@@ -53,7 +53,7 @@ const Header = () => {
 
 <div className=" w-full flex sm:hidden items-center justify-center gap-2 pt-2">
      
-  <input className=" w-full sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> 
+  <input className=" w-full sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-borderColor h-[40px] px-3 border-2 border-primary rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> 
   <label htmlFor="search"> <FaSearch/></label>
        
         
@@ -65,11 +65,11 @@ const Header = () => {
 
       
 <nav className=" flex  ">
-  <button className="lg:hidden flex p-3 bg-[#c5161d] text-white rounded-md text-lg" onClick={navHandler}> <FaBars/> </button>
+  <button className="lg:hidden flex p-3 bg-active text-secondary rounded-md text-lg" onClick={navHandler}> <FaBars/> </button>
   {
     navShow ?
-    <nav className=" bg-[#c5161d] w-[220px] pl-[30px] py-5 z-50 rounded-md  absolute  top-[55px] left-0"> 
-    <ul className="  text-white  flex-col md:flex lg:hidden items-center justify-center lg:gap-2  flex-wrap">
+    <nav className=" bg-active w-[220px] pl-[30px] py-5 z-50 rounded-md  absolute  top-[55px] left-0"> 
+    <ul className="  text-secondary  flex-col md:flex lg:hidden items-center justify-center lg:gap-2  flex-wrap">
     <li><Link className="text-sm font-bold hover:underline underline-offset-2" to="#"> সর্বশেষ </Link> </li>
     <li>  <Link className="text-sm font-bold hover:underline underline-offset-2" to="#"> রাজনীতি   </Link> </li>
     <li>     <Link className="text-sm font-bold hover:underline underline-offset-2" to="#"> বাংলাদেশ </Link>  </li>
@@ -104,14 +104,14 @@ const Header = () => {
 <div className=" flex items-center justify-center gap-2  ">
 <div className=" hidden sm:flex w-full  items-center justify-center gap-2  ">
       {
-        secondSearchBar ? <input className="  w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2     z-50 " type="search" name="search" id="search" placeholder="search here" /> : ""
+        secondSearchBar ? <input className="  w-[220px] shadow-md outline-0  focus:border-borderColorh-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2     z-50 " type="search" name="search" id="search" placeholder="search here" /> : ""
       }
-        <i onClick={secondHandler} className=" flex items-center justify-center gap-1 border-r-[2px] border-slate-500 px-3 text-black text-sm font-normal cursor-pointer " > {secondSearchBar ?<FaXmark className=" text-xl"/>    : <FaSearch className=" text-xl"/> } খুজুন  </i>
+        <i onClick={secondHandler} className=" flex items-center justify-center gap-1 border-r-[2px] border-borderColor px-3 text-black text-sm font-normal cursor-pointer " > {secondSearchBar ?<FaXmark className=" text-xl"/>    : <FaSearch className=" text-xl"/> } খুজুন  </i>
 </div>
  
 <a href="#" className="  px-2  flex  text-black  items-center justify-center gap-1 text-sm font-normal "> <FaNewspaper className="text-xl "/>  পেপার  </a>
  
-<div className=" flex items-center justify-center gap-1 py-[5px] px-3 bg-red-200 border-r-[2px] border-slate-500 border-l-[2px]  ">   
+<div className=" flex items-center justify-center gap-1 py-[5px] px-3 bg-red-200 border-r-[2px] border-borderColor border-l-[2px]  ">   
 <label htmlFor="language">  <GrLanguage className="text-xl "/>    </label>
   <select className=" border-0  outline-0  bg-red-200 " name="" id="language">
      
@@ -121,19 +121,19 @@ const Header = () => {
   </select>
 </div>
 
-<div className=" flex items-center justify-center px-3 border-r-[2px] border-slate-500 ">
+<div className=" flex items-center justify-center px-3  ">
     <a className="flex items-center justify-center text-sm  gap-1" href="#"> <FaUser/> Login </a>
   </div>
-  <button> <FaBars/> </button>
+
     
    
 </div>
       </div>
 
     <div className=" flex items-center justify-center  w-full  ">
-      <p className="bg-[#c5161d] text-white pl-[15px] px-2 w-[130px] sm:text-lg  text-sm   "> শিরোনাম  </p>
+      <p className="bg-active text-secondary pl-[15px] py-[9px] w-[130px] sm:text-lg  text-sm   "> শিরোনাম  </p>
 
-    <Marquee pauseOnHover={true} className="bg-[#0f3a5a]  px-2 "  >
+    <Marquee pauseOnHover={true} className="bg-marqueeBg  px-4 "  >
  <MyComponent  />
   </Marquee>
     </div>

@@ -1,1 +1,9 @@
  
+ @font-face {
+    font-family: 'SolaimanLipi';
+    src: url('/src/assets/font/SolaimanLipi.ttf')
+ }
+
+ body{
+    font-family:"SolaimanLipi";
+ }
