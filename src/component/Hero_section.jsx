@@ -8,8 +8,9 @@ const Hero_section = () => {
 <div className=" w-full lg:w-[50%] h-[300px]  "> 
     
     <div className=" w-full h-full relative ">
-        <img className="w-full h-full object-cover" src="./src/assets/image/Eggs.jpeg" alt="" />
-    
+        <img className="w-full h-full object-cover" src="https://i.ibb.co.com/K9P0j4S/Eggs.jpg" alt="" />
+ 
+
    <div className="absolute bottom-0 left-0 p-3 bg-black/60 w-full ">
    <h4 className="text-white text-xl font-bold"> ডিমের ডজন ৬৫ টাকা  </h4>
    </div>

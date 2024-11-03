@@ -35,7 +35,7 @@ const Header = () => {
 রবিবার ২৯ সেপ্টেম্বর ২০২৪ , ১২.৪০ পূর্বাহ্ন 
 </p>
 <div  className="  flex item-center justify-center gap-2">
-    <div className=" w-full flex items-center justify-center gap-2">
+    <div className=" hidden w-full sm:flex items-center justify-center gap-2">
       {
         searchShow ? <input className=" w-[150px] sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> : ""
       }
@@ -50,6 +50,14 @@ const Header = () => {
     <a href="#" className=" pl-2 text-lg "> <FaGooglePlus/> </a>
   </div>
 </div>
+
+<div className=" w-full flex sm:hidden items-center justify-center gap-2 pt-2">
+     
+  <input className=" w-full sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> 
+  <label htmlFor="search"> <FaSearch/></label>
+       
+        
+    </div>
     </div>
 
 
@@ -94,9 +102,9 @@ const Header = () => {
 </nav>
 
 <div className=" flex items-center justify-center gap-2  ">
-<div className=" w-full flex items-center justify-center gap-2 relative">
+<div className=" hidden sm:flex w-full  items-center justify-center gap-2  ">
       {
-        secondSearchBar ? <input className="  w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 absolute   sm:top-[40px] sm:right-[70px] z-50 " type="search" name="search" id="search" placeholder="search here" /> : ""
+        secondSearchBar ? <input className="  w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2     z-50 " type="search" name="search" id="search" placeholder="search here" /> : ""
       }
         <i onClick={secondHandler} className=" flex items-center justify-center gap-1 border-r-[2px] border-slate-500 px-3 text-black text-sm font-normal cursor-pointer " > {secondSearchBar ?<FaXmark className=" text-xl"/>    : <FaSearch className=" text-xl"/> } খুজুন  </i>
 </div>

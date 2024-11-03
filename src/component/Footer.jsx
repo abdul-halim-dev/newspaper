@@ -20,7 +20,7 @@ const Footer = () => {
          <FooterRight/>  
          </div>
          <div className="w-full flex-col sm:flex-row gap-2 flex items-center justify-between p-2 bg-slate-200">
-            <ul className="flex items-center justify-center gap-4">
+            <ul className="flex items-center justify-center gap-2 sm:gap-4">
                 <li type="disc" className="px-2 text-black text-sm font-medium hover:underline"> <Link> যোগাযোগ  </Link></li>
                 <li type="disc"  className="px-2 text-black text-sm font-medium hover:underline"> <Link>  গোপনীয় নীতি   </Link></li>
                 <li type="disc"  className="px-2 text-black text-sm font-medium hover:underline"> <Link>  বিজ্ঞাপনের মূল্য তালিকা  </Link></li>

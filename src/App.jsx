@@ -1,7 +1,9 @@
+import Featuresection from "./component/Featuresection";
 import Footer from "./component/Footer";
 import Header from "./component/Header"
 import Hero_section from "./component/Hero_section"
 import SpecialNews from './component/SpecialNews';
+import Videogallery from "./component/Videogallery";
 import Wholecountry from "./component/Wholecountry";
  
  
@@ -12,9 +14,9 @@ import Wholecountry from "./component/Wholecountry";
 <Header/>
 <Hero_section/>
  <SpecialNews/>
-
 <Wholecountry/>
-
+<Featuresection/>
+<Videogallery/>
 <Footer/>
 
      </div>
