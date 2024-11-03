@@ -10,7 +10,7 @@ const Footer = () => {
          <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-2 p-2  ">
             <div className="flex flex-col items-start justify-start">
                 <p className="text-[12px] text-primary"> আমরা জনগণের পক্ষে</p>
-                <h2 className="text-green-500 text-2xl font-bold"> <span className="text-active"> বাংলাদেশ  </span> প্রতিদিন </h2>
+                <Link to={"/"} className="text-green-500 text-2xl font-bold"> <span className="text-active"> বাংলাদেশ  </span> প্রতিদিন </Link>
             </div>
             <p className="text-lg text-primary ">ভারপ্রাপ্ত সম্পাদক : আবু তাহের </p>
         </div>

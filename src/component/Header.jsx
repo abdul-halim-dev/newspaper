@@ -8,7 +8,8 @@ import MyComponent from "./MyComponent";
  
  
  
-const Header = () => {
+const 
+Header = () => {
   const [searchShow, setsearchshow] = useState(false)
   const [secondSearchBar, setsecondSearchBar] = useState(false)
   const [navShow , setnavShow] = useState(false)
@@ -31,10 +32,10 @@ const Header = () => {
     <header className=" w-full flex flex-col items-start justify-between  sticky top-0 z-50  " >
         
     <div className=" flex items-center w-full justify-between bg-[#c5161d] md:py-0 py-2 gap-2 md:h-[50px] px-4 md:px-16 flex-col md:flex-row ">
-<p className="text-secondary  text-lg   ">
+<p className=" hidden sm:flex text-secondary text-sm sm:text-lg   ">
 রবিবার ২৯ সেপ্টেম্বর ২০২৪ , ১২.৪০ পূর্বাহ্ন 
 </p>
-<div  className="  flex item-center justify-center gap-2">
+<div  className="  hidden sm:flex item-center justify-center gap-2">
     <div className=" hidden w-full sm:flex items-center justify-center gap-2">
       {
         searchShow ? <input className=" w-[150px] sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-slate-600 h-[40px] px-3 border-2 border-slate-900 rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> : ""
@@ -42,7 +43,7 @@ const Header = () => {
        
         <i onClick={searchHandle} className="border-r-2 px-2 text-secondary text-lg cursor-pointer " ><FaSearch/> </i>
     </div>
-  <div  className=" w-full flex items-center justify-center gap-1   text-secondary ">
+  <div  className=" w-full hidden sm:flex items-center justify-center gap-1   text-secondary ">
   <a href="#" className="border-r-2 px-2 text-lg"> <FaFacebook/> </a>
     <a href="#" className="border-r-2 px-2 text-lg "><FaTwitter/> </a>
     <a href="#" className="border-r-2 px-2 text-lg "> <FaLinkedin/> </a>
@@ -51,14 +52,20 @@ const Header = () => {
   </div>
 </div>
 
-<div className=" w-full flex sm:hidden items-center justify-center gap-2 pt-2">
+{/* <div className=" w-full flex sm:hidden items-center justify-center gap-2 pt-2">
      
   <input className=" w-full sm:w-[180px] md:w-[220px] shadow-md outline-0  focus:border-borderColor h-[40px] px-3 border-2 border-primary rounded-md text-sm  focus:border-2 " type="search" name="search" id="search" placeholder="search here" /> 
   <label htmlFor="search"> <FaSearch/></label>
        
         
+    </div> */}
+
+    <div className=" flex sm:hidden ">
+      <Link className="text-green-500 text-2xl font-bold" to={"/"}> <span className="text-secondary"> বাংলাদেশ  </span> প্রতিদিন </Link>
     </div>
     </div>
+
+
 
 
     <div className=" relative px-2 sm:px-5 flex items-center justify-between  py-2  bg-white w-full ">
